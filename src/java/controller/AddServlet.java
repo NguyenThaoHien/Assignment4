@@ -23,7 +23,7 @@ import model.Product;
  * @author NGUYEN LAN
  */
 @WebServlet(name="addServlet", urlPatterns={"/add"})
-public class addServlet extends HttpServlet {
+public class AddServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -100,7 +100,7 @@ public class addServlet extends HttpServlet {
            // request.getRequestDispatcher("manage").forward(request, response);
            response.sendRedirect("manage");
         } catch (SQLException ex) {
-            Logger.getLogger(addServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AddServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }

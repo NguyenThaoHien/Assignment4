@@ -69,11 +69,8 @@ public class cartServlet extends HttpServlet {
             String remove = request.getParameter("remove");
             String productID = request.getParameter("productID");
             String quantity = request.getParameter("quantity");
-            String deleteID = request.getParameter("deleteID");
-            String addID = request.getParameter("addID");
+          
             
-            Product p = new Product();
-            Product productDelete = new Product();
             DBContext  db = new DBContext();
             
             

@@ -308,7 +308,7 @@ public class DBContext {
      public void deleteProduct(String productID) throws SQLException{
         String sql = "delete from Product where ProductID=?";
         PreparedStatement statement = connection.prepareStatement(sql);
-     //   ResultSet rs = statement.executeQuery();
+ 
         
         statement.setString(1, productID);
         statement.executeUpdate();
